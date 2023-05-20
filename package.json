@@ -1,0 +1,40 @@
+{
+  "name": "thelounge-theme-ianon",
+  "version": "2.3.3",
+  "description": "iAnon thelounge theme",
+  "main": "package.json",
+  "scripts": {
+    "scss": "node-sass -w ./src/ianon.scss ianon.css",
+    "test": "stylelint ianon.css",
+    "format": "stylelint --fix ianon.css"
+  },
+  "thelounge": {
+    "name": "iAnon",
+    "type": "theme",
+    "css": "ianon.css",
+    "themeColor": "#202126"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/voaii/thelounge-theme-ianon",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voaii/thelounge-theme-ianon.git"
+  },
+  "keywords": [
+    "thelounge",
+    "thelounge-theme"
+  ],
+  "bugs": {
+    "url": "https://github.com/voaii/thelounge-theme-ianon/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^9.0.0",
+    "sass": "^1.62.1",
+    "scss": "^0.2.4",
+    "stylelint": "^15.6.2",
+    "stylelint-config-recommended-scss": "^12.0.0",
+    "stylelint-declaration-strict-value": "^1.9.2",
+    "stylelint-config-standard": "^33.0.0",
+    "stylelint-order": "^6.0.3"
+  }
+}

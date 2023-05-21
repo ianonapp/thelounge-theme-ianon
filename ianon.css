@@ -714,13 +714,6 @@ body #connectform input.input {
   #chat .msg[data-type=condensed] > .msg,
   #chat .msg > .msg {
     margin-left: 0; }
-  #chat .msg[data-type=condensed] .from .user,
-  #chat .msg[data-type=condensed] .from,
-  #chat .msg[data-type=condensed] .from *,
-  #chat .msg .from .user,
-  #chat .msg .from,
-  #chat .msg .from * {
-    font-size: 1.07238em; }
   #chat .msg .from {
     padding-right: 5px; }
   #chat .msg[data-type=condensed] .from .user .only-copy,
@@ -759,8 +752,7 @@ body #connectform input.input {
   #chat .msg.self.previous-source {
     font-size: var(--font-size-msg); }
   #chat .msg.self .time {
-    color: var(--color-timestamp-self-mobile-conversation-layout);
-    font-size: inherit; }
+    color: var(--color-timestamp-self-mobile-conversation-layout); }
   #chat .msg + .msg.previous-source .from {
     display: none; }
   #chat .msg[data-type=message] .from {
@@ -773,19 +765,9 @@ body #connectform input.input {
     display: none; }
   #chat .msg[data-type=message] .content {
     color: #e3e3e3; }
-  #chat .msg > .from,
-  #chat .msg > .time,
-  #chat .msg > .content {
-    font-size: 1.1em; }
-  #chat .msg[data-type=message] > .time,
-  #chat .msg[data-type=unhandled] > .time,
-  #chat .msg[data-type=mode_channel] > .time,
-  #chat .msg > .time {
-    font-size: 0.9em; }
   .messages .msg .from,
   .from .user,
   #chat .from {
-    font-size: 1.04881em !important;
     font-weight: 600; }
   #chat .msg[data-type=message].previous-source .content {
     display: inline-block; }
@@ -843,6 +825,37 @@ body #connectform input.input {
     height: 100vh; }
   #chat-container {
     height: 100vh; } }
+
+@media (max-width: 680px) {
+  div[data-type="message"],
+  #chat .msg,
+  #chat .msg.self,
+  #chat .msg .content,
+  #chat .msg.self .content,
+  #chat .chat-view[data-type=channel] .msg.highlight,
+  #chat .msg:only-of-type,
+  #chat .msg:only-of-type .content,
+  #chat .msg.previous-source,
+  #chat .msg.selfprevious-source,
+  #chat .msg.previous-source .content {
+    font-size: var(--font-size-msg) !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%; }
+  #chat .msg[data-type=condensed] .from .user,
+  #chat .msg[data-type=condensed] .from,
+  #chat .msg[data-type=condensed] .from *,
+  #chat .msg .from .user,
+  #chat .msg .from,
+  #chat .msg .from * {
+    font-size: var(--font-size-nick); }
+  #chat .msg[data-type=condensed] .time,
+  #chat .msg .time {
+    font-size: var(--font-size-chat-timestamp); }
+  #chat .msg.self.previous-source {
+    font-size: var(--font-size-msg); }
+  #chat .msg[data-type="message"] .content {
+    font-size: var(--font-size-msg); } }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (display-mode: standalone) {
   #form {

@@ -1,3 +1,4 @@
+$breakpoint-mobile: 680px;
 :root {
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -875,14 +876,6 @@ body #connectform input.input {
 	margin-left: 0
 }
 
- #chat .msg[data-type=condensed] .from .user,
-#chat .msg[data-type=condensed] .from,
-#chat .msg[data-type=condensed] .from *,
-#chat .msg .from .user,
-#chat .msg .from,
-#chat .msg .from * {
-	font-size: 1.07238em;
-} 
 
 #chat .msg .from {
     padding-right: 5px;
@@ -945,7 +938,6 @@ body #connectform input.input {
 
 #chat .msg.self .time {
 	color: var(--color-timestamp-self-mobile-conversation-layout);
-	font-size: inherit;
 }
 
 #chat .msg+.msg.previous-source .from {
@@ -970,23 +962,9 @@ body #connectform input.input {
 	color:  #e3e3e3;
 }
 
-#chat .msg > .from,
-#chat .msg > .time,
-#chat .msg > .content {
-    font-size: 1.1em;
-}
-
-#chat .msg[data-type=message] > .time,
-#chat .msg[data-type=unhandled] > .time,
-#chat .msg[data-type=mode_channel] > .time,
-#chat .msg > .time {
-    font-size: 0.9em;
-}
-
 .messages .msg .from,
 .from .user,
 #chat .from {
-	font-size: 1.04881em!important;
 	font-weight: 600;
 }
 
@@ -1060,7 +1038,85 @@ body #connectform input.input {
 		    height: 100vh;
 		}
 }
+@media (max-width: $breakpoint-mobile) {
+  div[data-type="message"],
+  #chat .msg,
+  #chat .msg.self,
+  #chat .msg .content,
+  #chat .msg.self .content,
+  #chat .chat-view[data-type=channel] .msg.highlight,
+  #chat .msg:only-of-type,
+  #chat .msg:only-of-type .content,
+  #chat .msg.previous-source,
+  #chat .msg.selfprevious-source,
+  #chat .msg.previous-source .content {
+    font-size: var(--font-size-msg) !important;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
 
+  #chat .msg[data-type=condensed],
+  #chat .msg {
+
+
+    > .msg {
+
+    }
+
+    .from .user,
+    .from,
+    .from * {
+      font-size: var(--font-size-nick);
+
+      .only-copy {
+
+      }
+    }
+
+    .time {
+      font-size: var(--font-size-chat-timestamp);
+    }
+
+    &.previous-source {
+
+    }
+  }
+
+  #chat .chat-view[data-type=channel] .msg.highlight {
+
+
+    .time {
+
+    }
+
+    &.previous-source {
+
+
+      .content {
+
+      }
+    }
+  }
+
+  #chat .msg.self {
+    .from {
+    }
+
+    &.previous-source {
+      font-size: var(--font-size-msg);
+    }
+
+    .time {
+
+    }
+  }
+
+  #chat .msg[data-type="message"] .content {
+    font-size: var(--font-size-msg);
+  }
+
+}
 @mixin bottomSafeAreaFix {
 
   #form {

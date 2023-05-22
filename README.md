@@ -32,7 +32,7 @@ There are 2 versions of this theme: \
 https://github.com/ianonapp/thelounge-theme-ianon - with chat bubbles \
 https://github.com/ianonapp/thelounge-theme-ianon-alt - without chat bubbles
 
-<p align="left">
-	<img width="300px" alt="Screenshot of the mobile bubbles version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-bubbles.png">
-	<img width="300px" alt="Screenshot of the mobile standard version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-standard.png">
+<p align="center">
+	<img width="275px" alt="Screenshot of the mobile bubbles version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-bubbles.png">
+	<img width="275px" alt="Screenshot of the mobile standard version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-standard.png">
 </p>

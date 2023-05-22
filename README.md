@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-	<img width="550" alt="Screenshot of the iAnon theme for The Lounge"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-desktop.png">
+	<img width="550" alt="Screenshot of the iAnon theme for The Lounge"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon-alt/master/screenshots/preview-desktop.png">
 </p>
 
 ## Installation
@@ -33,6 +33,6 @@ https://github.com/ianonapp/thelounge-theme-ianon - with chat bubbles \
 https://github.com/ianonapp/thelounge-theme-ianon-alt - without chat bubbles
 
 <p align="center">
-	<img width="275px" alt="Screenshot of the mobile bubbles version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-bubbles.png">
-	<img width="275px" alt="Screenshot of the mobile standard version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon/master/preview-mobile-standard.png">
+	<img width="275px" alt="Screenshot of the mobile bubbles version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon-alt/master/screenshots/preview-mobile-bubbles.png">
+	<img width="275px" alt="Screenshot of the mobile standard version"  src="https://raw.githubusercontent.com/ianonapp/thelounge-theme-ianon-alt/master/screenshots/preview-mobile-standard.png">
 </p>

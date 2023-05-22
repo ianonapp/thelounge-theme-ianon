@@ -1116,6 +1116,10 @@ body #connectform input.input {
     font-size: var(--font-size-msg);
   }
 
+  #chat .chat-view[data-type=channel] .msg.highlight .content {
+  	border-left: none;
+  }
+
 }
 @mixin bottomSafeAreaFix {
 

@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 222;
-	--available-version: 222;
+	--document-version: 223;
+	--available-version: 223;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -904,11 +904,6 @@ body #connectform input.input {
 	white-space: nowrap
 } 
 
- #chat .msg[data-type=condensed].previous-source,
-#chat .msg.previous-source {
-	padding: 5px 10px
-} 
-
 #chat .chat-view[data-type=channel] .msg.highlight {
 	background: var(--highlight-bg-color-mobile-conversation-layout) !important
 }
@@ -919,10 +914,6 @@ body #connectform input.input {
 
 #chat .chat-view[data-type=channel] .msg.highlight.previous-source {
 	margin-top: -1px
-}
-
-#chat .chat-view[data-type=channel] .msg.highlight.previous-source .content {
-	margin-bottom: -4px
 }
 
  #chat .msg.self {

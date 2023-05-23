@@ -1,5 +1,8 @@
 $breakpoint-mobile: 680px;
 :root {
+	--document-version: 222;
+	--available-version: 222;
+	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
 	--msg-self-bg-color: #1b1f27;

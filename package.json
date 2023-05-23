@@ -4,7 +4,9 @@
   "description": "iAnon thelounge theme",
   "main": "package.json",
   "scripts": {
-    "scss": "node-sass -w ianon.scss ianon.css"
+    "scss": "node-sass -w ianon.scss ianon.css",
+    "test": "stylelint ianon.css",
+    "format": "stylelint --fix ianon.css"
   },
   "thelounge": {
     "name": "iAnon",
@@ -26,6 +28,8 @@
     "url": "https://github.com/voaii/thelounge-theme-ianon/issues"
   },
   "devDependencies": {
-    "node-sass": "^8.0.0"
+    "node-sass": "^9.0.0",
+    "stylelint": "^15.6.2",
+    "stylelint-config-standard": "^33.0.0"
   }
 }

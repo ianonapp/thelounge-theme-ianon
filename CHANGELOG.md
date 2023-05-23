@@ -1,4 +1,4 @@
-### 2.3.3: 2023-05-23
+### 2.3.4: 2023-05-23
 
 * Fix settings input
 * Restructure directories

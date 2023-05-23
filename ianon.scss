@@ -1184,3 +1184,45 @@ body #connectform input.input {
 @media only screen and (min-device-width : 428px) and (max-device-height : 926px) and (-webkit-device-pixel-ratio : 3) and (display-mode: browser) {
   @include bottomSafeAreaFixBrowser()
 }
+
+#help .about::before {
+  content: '\f06a   An update is available for iAnon, your active theme.';
+  display: block;
+  background-color: var(--link-color);
+  color: var(--sidebar-background);
+  border-radius: 2px;
+  font-size: 14px;
+  font-family: 'FontAwesome', var(--primary-font);
+  white-space: pre-wrap;
+
+  height: calc(var(--update-available) * 1em + calc(var(--update-available) * 20px));
+  padding: calc(10px * var(--update-available));
+  margin: calc(10px * var(--update-available)) 0;
+
+  overflow: hidden;
+}
+
+#footer .help {
+  position: relative;
+
+  &::before {
+    opacity: calc(1 - var(--update-available));
+  }
+
+  &::after {
+    content: '\f06a';
+    color: var(--link-color);
+    overflow: hidden;
+    pointer-events: none;
+    opacity: var(--update-available);
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+}

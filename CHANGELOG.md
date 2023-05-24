@@ -1,3 +1,7 @@
+### 2.3.4: 2023-05-24
+
+* Change link color
+
 ### 2.3.4: 2023-05-23
 
 * Fix settings input

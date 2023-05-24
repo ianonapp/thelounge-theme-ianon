@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 234;
-	--available-version: 234;
+	--document-version: 238;
+	--available-version: 238;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -14,7 +14,7 @@ $breakpoint-mobile: 680px;
 	--button-color: #50fa7b;
 	--button-text-color-hover: #282a36;
 	--overlay-bg-color: rgba(0, 0, 0, .5);
-	--link-color: #f8f8f2;
+	--link-color: #00a8fc;
 	--window-bg-color: #202126;
 	--window-heading-color: #44475a;
 	--date-marker-color: rgba(40, 42, 54, .5);

@@ -1,3 +1,7 @@
+### 2.4.0: 2023-05-24
+
+* Change preview image size
+
 ### 2.3.9: 2023-05-24
 
 * Change self link color

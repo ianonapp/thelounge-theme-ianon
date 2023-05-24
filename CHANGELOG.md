@@ -1,4 +1,8 @@
-### 2.3.4: 2023-05-24
+### 2.3.9: 2023-05-24
+
+* Change self link color
+
+### 2.3.8: 2023-05-24
 
 * Change link color
 

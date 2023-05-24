@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 240;
-	--available-version: 240;
+	--document-version: 241;
+	--available-version: 241;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -110,7 +110,7 @@ html * {
 }
 
 #chat .toggle-content img {
-    max-height: 590px;
+    max-height: 300px;
 } 
 
 #form {

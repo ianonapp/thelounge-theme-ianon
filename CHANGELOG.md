@@ -1,3 +1,7 @@
+### 2.4.1: 2023-05-24
+
+* Smaller preview image size
+
 ### 2.4.0: 2023-05-24
 
 * Change preview image size

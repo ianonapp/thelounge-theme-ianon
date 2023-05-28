@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 241;
-	--available-version: 241;
+	--document-version: 242;
+	--available-version: 242;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -1151,7 +1151,7 @@ body #connectform input.input {
     height: 100vh;
   }
   #chat-container .messages:last-child {
-    padding-bottom: 70;
+    padding-bottom: 70px;
   }
   #form:focus-within {
     margin-bottom: 60px !important;

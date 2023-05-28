@@ -1,3 +1,7 @@
+### 2.4.2: 2023-05-28
+
+* Add missing unit to bottom padding
+
 ### 2.4.1: 2023-05-24
 
 * Smaller preview image size

@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 245;
-	--available-version: 245;
+	--document-version: 246;
+	--available-version: 246;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: #dadada;
 	--msg-self-color: rgb(236, 248, 255);
@@ -1031,7 +1031,7 @@ body #connectform input.input {
     margin: 0 10px 10px 10px;
 }
 #chat {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 @media only screen and (min-device-width: 768px) {
 	#chat .chat-view[data-type=channel] .msg.highlight,
@@ -1134,9 +1134,6 @@ body #connectform input.input {
   #app {
     padding-bottom: 20px;
   }
-  #form {
-  	margin-bottom: 0;
-  }
 }
 
 @mixin bottomSafeAreaFixBrowser {
@@ -1145,9 +1142,6 @@ body #connectform input.input {
   }
   #app {
     padding-bottom: 20px;
-  }
-  #form {
-  	margin-bottom: 0;
   }
 }
 

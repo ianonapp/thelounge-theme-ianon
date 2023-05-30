@@ -1131,18 +1131,8 @@ body #connectform input.input {
 
 }
 @mixin bottomSafeAreaFix {
-
-  #form {
-    margin-bottom: 50px;
-    transition: margin-bottom 0.2s;
-  
-    &:focus-within {
-      margin-bottom: 15px;
-    }
-  }
-
-  #footer {
-    margin-bottom: 40px;
+  #app {
+    padding-bottom: 30px;
   }
 }
 
@@ -1150,11 +1140,8 @@ body #connectform input.input {
   html, body, #viewport, #chat-container {
     height: 100vh;
   }
-  #chat-container .messages:last-child {
-    padding-bottom: 70px;
-  }
-  #form:focus-within {
-    margin-bottom: 60px !important;
+  #app {
+    padding-bottom: 30px;
   }
 }
 

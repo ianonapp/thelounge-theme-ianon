@@ -1,3 +1,7 @@
+### 2.4.3: 2023-05-28
+
+* App bottom padding
+
 ### 2.4.2: 2023-05-28
 
 * Add missing unit to bottom padding

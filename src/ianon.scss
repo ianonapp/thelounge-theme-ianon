@@ -1,10 +1,10 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 248;
-	--available-version: 248;
+	--document-version: 249;
+	--available-version: 249;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
-	--body-color: #dadada;
-	--msg-self-color: rgb(236, 248, 255);
+	--body-color: rgb(221 234 241);
+	--msg-self-color: rgb(181 195 202);
 	--msg-self-bg-color: #1b1f27;
 	--msg-action-color: #f1fa8c;
 	--border-color: #20283b;

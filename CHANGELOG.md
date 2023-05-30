@@ -1,6 +1,7 @@
-### 2.4.8: 2023-05-28
+### 2.4.9: 2023-05-28
 
 * App bottom padding
+* Self messages color
 
 ### 2.4.2: 2023-05-28
 

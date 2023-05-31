@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 249;
-	--available-version: 249;
+	--document-version: 250;
+	--available-version: 250;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1030,9 +1030,6 @@ body #connectform input.input {
     padding: 10px;
     margin: 0 10px 10px 10px;
 }
-#chat {
-    margin-bottom: 10px;
-}
 @media only screen and (min-device-width: 768px) {
 	#chat .chat-view[data-type=channel] .msg.highlight,
 	#chat .chat-view[data-type=channel] .msg.highlight .content {
@@ -1130,14 +1127,38 @@ body #connectform input.input {
   }
 
 }
-@media(max-width: 680px) {
-	#chat {
-	    margin-bottom: 25px;
-	}
-}
 @mixin bottomSafeAreaFix {
+  html, body, #viewport, #chat-container {
+    height: 100vh;
+  }
   #app {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+  }
+  #app:focus-within {
+    padding-bottom: 0;
+  }
+  #chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  #chat .msg:last-of-type {
+    padding-bottom: 2vh; /* 2% of the viewport height */
+  }
+
+  #chat .msg:last-of-type::after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 
@@ -1146,7 +1167,33 @@ body #connectform input.input {
     height: 100vh;
   }
   #app {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100%;
+  }
+  #app:focus-within {
+    padding-bottom: 0;
+  }
+  #chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+  }
+
+  #chat .msg:last-of-type {
+    padding-bottom: 2vh; /* 2% of the viewport height */
+  }
+
+  #chat .msg:last-of-type::after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
   }
 }
 

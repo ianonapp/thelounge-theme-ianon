@@ -1,3 +1,7 @@
+### 2.5.0: 2023-05-31
+
+* Rework mobile form padding
+
 ### 2.4.9: 2023-05-28
 
 * App bottom padding

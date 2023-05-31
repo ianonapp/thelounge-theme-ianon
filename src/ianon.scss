@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 251;
-	--available-version: 251;
+	--document-version: 252;
+	--available-version: 252;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1128,83 +1128,11 @@ body #connectform input.input {
 
 }
 @mixin bottomSafeAreaFix {
-  html, body, #viewport, #chat-container {
-    height: 100vh;
-  }
-  #chat,
-  #sidebar,
-  #settings {
-    margin-top: 30px;
-  }
-  #app {
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 100%;
-  }
-  #app:focus-within {
-    padding-bottom: 0;
-  }
-  #chat {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-  }
 
-  #chat .msg:last-of-type {
-    padding-bottom: 2vh; /* 2% of the viewport height */
-  }
-
-  #chat .msg:last-of-type::after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
 
 @mixin bottomSafeAreaFixBrowser {
-  html, body, #viewport, #chat-container {
-    height: 100vh;
-  }
-  #chat,
-  #sidebar,
-  #settings {
-    margin-top: 30px;
-  }
-  #app {
-    padding-bottom: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    min-height: 100%;
-  }
-  #app:focus-within {
-    padding-bottom: 0;
-  }
-  #chat {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    position: relative;
-  }
 
-  #chat .msg:last-of-type {
-    padding-bottom: 2vh; /* 2% of the viewport height */
-  }
-
-  #chat .msg:last-of-type::after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-  }
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (display-mode: standalone) {

@@ -1,6 +1,7 @@
-### 2.5.1: 2023-05-31
+### 2.5.2: 2023-05-31
 
 * Rework mobile form padding
+* Revert all padding attempts
 
 ### 2.4.9: 2023-05-28
 

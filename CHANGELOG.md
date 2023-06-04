@@ -1,3 +1,8 @@
+### 2.5.3: 2023-06-04
+
+* Time on left
+* Form spacing bottom mobile
+
 ### 2.5.2: 2023-05-31
 
 * Rework mobile form padding

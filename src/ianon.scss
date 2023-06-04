@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 252;
-	--available-version: 252;
+	--document-version: 253;
+	--available-version: 253;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1128,11 +1128,27 @@ body #connectform input.input {
 
 }
 @mixin bottomSafeAreaFix {
-
+	#form {
+	    margin-bottom: 30px;
+	}
+	footer#footer {
+	    margin-bottom: 30px;
+	}
+	#chat .content {
+	    border-left: none;
+	}
 }
 
 @mixin bottomSafeAreaFixBrowser {
-
+	#form {
+	    margin-bottom: 30px;
+	}
+	footer#footer {
+	    margin-bottom: 30px;
+	}
+	#chat .content {
+	    border-left: none;
+	}
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (display-mode: standalone) {
@@ -1210,4 +1226,32 @@ body #connectform input.input {
     bottom: 0;
     right: 0;
   }
+}
+
+@media (min-width: 768px) {
+    #chat .from {
+        width: unset;
+        padding-left: 5px;
+    }
+    #chat .content { 
+        padding-left:0;
+    }
+    #chat.time-12h .time, #chat.time-seconds .time {
+        width:80px;
+        text-align:right;
+    }
+    #chat .time { 
+        order:unset;
+        font-size: 0.765em;
+        line-height: 2.2;
+    }
+    #chat .msg {
+        padding-right: 30px;
+    }
+    #chat .chat-view[data-type=channel] .msg.highlight  {
+        border-left: 5px solid #2b3855;
+    }
+    #chat .chat-view[data-type=channel] .msg.highlight .content {
+        border-left:none;
+    }
 }

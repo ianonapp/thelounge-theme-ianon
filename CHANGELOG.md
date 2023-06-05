@@ -1,7 +1,8 @@
-### 2.5.3: 2023-06-04
+### 2.5.4: 2023-06-04
 
 * Time on left
 * Form spacing bottom mobile
+* Minor change to mobile timestamp
 
 ### 2.5.2: 2023-05-31
 

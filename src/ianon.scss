@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 258;
-	--available-version: 258;
+	--document-version: 259;
+	--available-version: 259;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1133,13 +1133,21 @@ body #connectform input.input {
 #chat video {
     max-height: 300px;
 }
+span.content .user {
+    color: #c9cdfb!important;
+    background: #5865f24c;
+    border-radius: 3px;
+    padding: 0 2px;
+}
 #chat .chat-view[data-type=channel] .msg.highlight .time {
 	color: var(--time-color)
 }
 @media (max-width: 480px) {
     #form {
         margin-bottom:30px;
-        margin-top:30px;
+    }
+    #chat .msg:nth-last-child(-n + 1) {
+        padding-bottom: 20px;
     }
     #chat .content {
         border-left: none;

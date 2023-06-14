@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 259;
-	--available-version: 259;
+	--document-version: 260;
+	--available-version: 260;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1143,12 +1143,6 @@ span.content .user {
 	color: var(--time-color)
 }
 @media (max-width: 480px) {
-    #form {
-        margin-bottom:30px;
-    }
-    #chat .msg:nth-last-child(-n + 1) {
-        padding-bottom: 20px;
-    }
     #chat .content {
         border-left: none;
     }

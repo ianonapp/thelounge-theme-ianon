@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 256;
-	--available-version: 256;
+	--document-version: 258;
+	--available-version: 258;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -26,14 +26,14 @@ $breakpoint-mobile: 680px;
 	--highlight-border-color: #44475a;
 	--upload-progressbar-color: #50fa7b;
 	--time-color: #838592;
-	--time-color-hover: #a3a5b5;
+	--time-color-hover: #838592;
 	--channel-list-item-hover-background: rgba(255, 255, 255, .05);
 	--color-toggle-content: #f3f3f3;
 	--color-toggle-content-body: #99a2b4;
 	--color-chat-container-placeholder: #99a2b4;
 	--color-date-marker: #97ea70;
-	--color-timestamp-self-mobile-conversation-layout: #b2b2b2;
-	--color-timestamp-highlight-mobile-conversation-layout: #8995b7;
+	--color-timestamp-self-mobile-conversation-layout: #838592;
+	--color-timestamp-highlight-mobile-conversation-layout: #838592;
 	--chat-bubble-background: #2c2d33;
 	--font-size: 16px;
 	--font-size-msg: 14px;
@@ -1132,6 +1132,9 @@ body #connectform input.input {
 }
 #chat video {
     max-height: 300px;
+}
+#chat .chat-view[data-type=channel] .msg.highlight .time {
+	color: var(--time-color)
 }
 @media (max-width: 480px) {
     #form {

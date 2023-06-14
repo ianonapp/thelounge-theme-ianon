@@ -1,7 +1,7 @@
 $breakpoint-mobile: 680px;
 :root {
-	--document-version: 255;
-	--available-version: 255;
+	--document-version: 256;
+	--available-version: 256;
 	--update-available: clamp(0, calc(var(--available-version) - var(--document-version)), 1);
 	--body-color: rgb(221 234 241);
 	--msg-self-color: rgb(181 195 202);
@@ -1127,28 +1127,27 @@ body #connectform input.input {
   }
 
 }
+.channel-list-item .close-tooltip {
+     display: none;
+}
+#chat video {
+    max-height: 300px;
+}
+@media (max-width: 480px) {
+    #form {
+        margin-bottom:30px;
+        margin-top:30px;
+    }
+    #chat .content {
+        border-left: none;
+    }
+}
 @mixin bottomSafeAreaFix {
-	#form {
-	    margin-bottom: 30px;
-	}
-	footer#footer {
-	    margin-bottom: 30px;
-	}
-	#chat .content {
-	    border-left: none;
-	}
+
 }
 
 @mixin bottomSafeAreaFixBrowser {
-	#form {
-	    margin-bottom: 30px;
-	}
-	footer#footer {
-	    margin-bottom: 30px;
-	}
-	#chat .content {
-	    border-left: none;
-	}
+
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (display-mode: standalone) {
